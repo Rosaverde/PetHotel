@@ -1,114 +1,133 @@
 body
 {
-    background: url(http://bigittech.com/pethotel/adorable-animal-breed-1805164.jpg);
-	background-size: cover;
-	background-position: center;
-	font-family: 'Lato', sans-serif;
-    color: white;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#00000090,#00000090), url(http://bigittech.com/pethotel/gallery/adorable-animal-breed-1805164-min.jpg);
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+    color: #eee;
 }
 
-html
+img
 {
-	height: 100%;
-}
-#content
-{
-	text-align: center;
-	padding-top: 25%;
-    text-shadow: 
-    0 0 2px #000 ,
-    0 0 4px #000 ,
-    0 0 8px #000 ,
-    0 0 10px #000,
-    0 0 12px #000,
-    0 0 14px #000,
-    0 0 16px #000;
-}
-.footerWrap
-{
-        background: rgba(0, 0, 0, 0.849);
-        padding: 10px;
-        bottom: 0;
-        position: fixed;
-        width: 100%;
-}
-h1
-{
-	font-weight: 700;
-    font-size: 4em;
-    text-align: center;
+    width: 100%;
 }
 
 hr
 {
-	width: 400px;
-	max-width: 90%; /* line is set not to overddrive width of screen */
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-width: 90%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid #00000066;
 }
 
-nav
-    {
-        z-index: 2;
-    }
-#SignUp h1
-    {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+h1
+{
+	font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+}
 
+.dropdown-menu
+{
+    background-color: transparent;
+    border: transparent;
+}
 
-.login
-    {
-        background: #00000090;
-        width: 360px;
-        height: 560px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        color: white;
+.dropdown-item
+{
+    color: #fff;
+}
+
+.dropdown-item:hover
+{
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.mainContainer
+{
+    padding: 3rem 0;
+    text-align:center;
+}
+
+.mainContainer h3
+{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.landing-text
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.landing-text span
+{
+    font-size: 2rem;
+    color: #3498db;
+}
+
+.footerWrap
+{
+        background: #000000e6;
+        padding: 0.6rem;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
         text-align: center;
-        border-radius: 10px;
-    }
-.signup
-    {
-        margin-top:7%;
-        height:680px;
-    }
+}
 
-.login h1
-    {
-        font-size: 60px;
-        margin-top: 80px;
-        margin-bottom: 60px;
-    }
+.about
+{
+    padding-top: 10%;
+}
+
+
+
+.about-details
+{
+    background-color: #3498db;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.about-details span
+{
+    font-size: 2.4rem;
+    font-weight: 900;
+}
 
 .tbox
-    {
+     {
         width: 260px;
-        height: 40px;
         background: #f1f1f1b3;
         border-radius: 10px;
         margin: 10px auto;
+        font-size: 1.2rem;
+        color: #fff;
     }
 
-.tbox input
+.tbox input, .tbox select
     {
+         width: 260px;
+        height: 40px;
         background: none;
-        border: none;
+        border: none; 
         outline: none;
         text-align: center;
-        width: 90%;
+        width: 95%;
         line-height: 37px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 18px;
+        font-size: 1.2rem;
         color: #fff
     }
 
-.btn_log
+.btnSubmit
     {
         width: 260px;
         height: 40px;
@@ -116,13 +135,84 @@ nav
         border-radius: 10px;
         margin: 14px auto;
         display: block;
-        font-family: "Montserrat",sans-serif;
         font-size: 20px;
         font-weight: bold;
         border: none;
         color: white;
         cursor: pointer;
     }
+
+.btnHov:hover
+{
+    background: #ffffff50;
+    color: #db0000;
+    border-radius: 10px;
+}
+
+.pricing
+{
+    padding: 8% 0;
+}
+
+.pricing li
+{
+    list-style: none;
+}
+
+.pricing h2
+{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.pricing h3
+{
+    padding: 2rem;
+}
+
+
+.pricing span
+{
+    font-size: 2rem;
+    float: right;
+
+
+}
+
+.pricing hr
+{
+    margin: 2rem;
+}
+
+.galleryDetails :last-of-type
+{
+    padding-bottom:3rem; 
+}
+
+.galleryDetails
+{
+    background-color: #0076a3;
+    color:white;
+    font-weight: 700;
+    font-size:  50px;
+    text-align: center;
+}
+
+
+.services:focus
+{
+    color: #000
+}
+
+.reservationDetails
+{
+    margin-top: 5rem;
+}
+
+.g-recaptchaFix
+{
+    margin-left: 30px;
+}
 
 .b1
     {
@@ -151,173 +241,21 @@ nav
         color: #3498db;
         border-radius: 10px;
     }
-.hov:hover
-    {
-        background: #ffffff50;
-        color: red;
-        border-radius: 10px;
-    }
-/*
-a:hover hov
-    {
-        
-    }
-    */
+
 .error
     {
         color:red;
         margin:10px;
     }
-.welcome
-    {
-        margin: 20px auto;
-        display: block;
-        font-family: "Montserrat",sans-serif;
-        font-size: 26px;
-        font-weight: bold;
-        border: none;
-        color: #3498db;
-    }
-#games
-    {
-        text-align: left;
-    }
-.mingame
-    {
-        color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.849);
-        padding: 50px;
-        border-radius: 10px;
-    }
-.mingame1
-    {
-        margin: 30px;
-    }
-.for
-    {
-        padding-top: 30px;
-    }
 
 .noHover
-{
-    pointer-events: none;
-}
+    {
+        pointer-events: none;
+    }
 
-.navbar-default .navbar-nav > .btnLogOut > a
-{
-    color: #3498db;
-    font-size: 20px;
-}
-
-.signup .g-recaptcha
-{
-    margin-left: 30px;
-}
-
-.col-lg-8
-{
-    padding: 0;
-}
-
-.img-responsive
-{
-    width: 1900px;
-}
-
-.parallax1
-{
-    background: url(http://bigittech.com/pethotel/gallery/1.jpg);
-}
-
-.parallax2
-{
-    background: url(http://bigittech.com/pethotel/gallery/2.jpg);
-
-}
-
-.parallax3
-{
-    background: url(http://bigittech.com/pethotel/gallery/3.jpg);
-}
-
-.parallax4
-{
-    background: url(http://bigittech.com/pethotel/gallery/4.jpg);
-
-}
-
-.parallax5
-{
-    background: url(http://bigittech.com/pethotel/gallery/5.jpg);
-}
-
-.parallax6
-{
-    background: url(http://bigittech.com/pethotel/gallery/6.jpg);
-}
-
-.parallax7
-{
-    background: url(http://bigittech.com/pethotel/gallery/7.jpg);
-}
-
-.parallax8
-{
-    background: url(http://bigittech.com/pethotel/gallery/8.jpg);
-}
-
-.parallax9
-{
-    background: url(http://bigittech.com/pethotel/gallery/9.jpg);
-}
-
-.parallax10
-{
-    background: url(http://bigittech.com/pethotel/gallery/10.jpg);
-}
-
-.parallax11
-{
-    background: url(http://bigittech.com/pethotel/gallery/11.jpg);
-}
-
-.parallax12
-{
-    background: url(http://bigittech.com/pethotel/gallery/12.jpg);
-}
-
-.parallax13
-{
-    background: url(http://bigittech.com/pethotel/gallery/13.jpg);
-}
-
-.parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, 
-.parallax8, .parallax9, .parallax10, .parallax11, .parallax12, .parallax13
-{
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 650px;
-}
-
-.parallax-heading
-{
-    
-    padding: 50px 80px;
-    background-color: #323232;
-    color:white;
-    font-weight: 700;
-    font-size:  60px;
-}
-
-.col-lg-8, .col-lg-4, .container-fluid
-{
-    padding: 0px;
-    top:50%;
-    
-}
-.navbar {
-	margin-bottom: 0px;
-}
+.welcome
+    {
+        font-size: 26px;
+        font-weight: bold;
+        color: #3498db;
+    }
